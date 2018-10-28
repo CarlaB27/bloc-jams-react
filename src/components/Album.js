@@ -50,17 +50,17 @@ class Album extends Component {
         this.setState({ isHovered: index });
     }
 
-    onMouseLeave(index) {
+    onMouseLeave() {
         this.setState({ isHovered: false });
     }
 
     isHovered(song, index) {
-        if (this.state.isHovered === index) {
+        if (this.state.isHovered === song) {
             return (<span className="icon ion-md-play"></span>);
         } else if (this.state.currentSong === song && this.state.isPlaying) {
             return (<span className="icon ion-md-pause"></span>);
-        } else if (this.state.currentSong === song && !this.state.isPlaying) {
-            return (<span className="icon ion-md-pause"></span>);
+        } else if (this.state.isHovered === index && !this.state.isPlaying) {
+            return (<span className="icon ion-md-play"></span>);
         } else {
             return (index + 1);
         }
@@ -87,7 +87,7 @@ class Album extends Component {
                         {this.state.album.songs.map((song, index) =>
                             <tr className="song" key={index}
                                 onClick={() => this.handleSongClick(song)}
-                                onMouseEnter={(index) => this.onMouseEnter(index)}
+                                onMouseEnter={() => this.onMouseEnter(index)}
                                 onMouseLeave={() => this.onMouseLeave(index)} >
                                 <td>{this.isHovered(song, index)}</td>
                                 <td>{song.title}</td>
