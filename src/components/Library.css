@@ -1,0 +1,21 @@
+a {
+   padding: 25px;
+    display: inline-block;
+}
+
+#title {
+    padding: 25px;
+    font-size: 50px;
+    text-shadow: 3px 2px #000;
+}
+#artist {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif, monospace, serif;
+    color: #000;
+}
+
+#songs{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif, monospace, serif;
+    color: #000;
+}

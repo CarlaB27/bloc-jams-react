@@ -1,0 +1,23 @@
+.landing {
+    font-family: 'Roboto', sans-serif, monospace, serif;
+}
+
+.hero-title {
+    font-family: 'Permanent Marker', cursive, sans serif, serif;
+    font-size: 100px;
+    margin: 100px;
+    text-shadow: 3px 2px white;
+}
+
+.point {
+display: inline-block;
+margin: 20px;
+}
+
+div.icon.ion-md, ::after, ::before {
+    font-size: 150px;
+  }
+
+  .point-description{
+      font-size: 20px;
+  }
