@@ -5,14 +5,14 @@ class PlayerBar extends Component {
     render() {
         return (
             <section className="player-bar">
-                <section id="buttons">
-                    <button id="previous" onClick={this.props.handlePrevClick}>
+                <section className="btn-group" id="buttons">
+                    <button className="btn btn-default" id="previous" onClick={this.props.handlePrevClick}>
                         <span className="icon ion-md-skip-backward"></span>
                     </button>
-                    <button id="play-pause" onClick={this.props.handleSongClick}>
+                    <button className="btn btn-default" id="play-pause" onClick={this.props.handleSongClick}>
                         <span className={this.props.isPlaying ? 'icon ion-md-pause' : 'icon ion-md-play'}></span>
                     </button>
-                    <button id="next" onClick={this.props.handleNextClick}>
+                    <button className="btn btn-default" id="next" onClick={this.props.handleNextClick}>
                         <span className="icon ion-md-skip-forward"></span>
                     </button>
                 </section>
@@ -20,7 +20,7 @@ class PlayerBar extends Component {
                     <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
                     <input
                         type="range"
-                        className="seek-bar"
+                        className="custom-range w-50"
                         value={(this.props.currentTime / this.props.duration) || 0}
                         max="1"
                         min="0"
@@ -32,7 +32,7 @@ class PlayerBar extends Component {
                     <div className="icon ion-md-volume-low">{this.props.currentVolume}</div>
                     <input
                         type="range"
-                        className="seek-bar"
+                        className="custom-range"
                         max="1"
                         min="0"
                         step="0.01"

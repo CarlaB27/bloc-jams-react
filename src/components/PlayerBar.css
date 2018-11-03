@@ -1,0 +1,62 @@
+.player-bar {
+    font-family: 'Roboto', sans-serif, monospace, serif;
+    color: #000;
+}
+
+.album-details {
+    font-family: 'Roboto', sans-serif, monospace, serif;
+    font-size: 60px;
+    color: #000;
+    display: inline-block;
+    margin: 30px;
+}
+
+#album-info {
+    display: inline-flex;
+    margin: 20px;
+
+}
+
+#album-title {
+    font-family: 'Permanent Marker', cursive, sans serif, serif;
+    font-size: 80px; 
+    text-shadow: 3px 2px white;
+    margin: 10px;
+}
+
+
+
+div.icon.ion-md, ::after, ::before {
+    font-size: 50px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+button {
+    margin-top: 90px;
+  }
+
+#time-control {
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.current-time, .total-time {
+    padding: 10px;
+    margin: 10px;
+}
+
+#volume-control {
+    font-size: 50px;
+    padding: 5px;
+    margin: 5px; 
+    display: inline-flex;
+    justify-content: center;
+    color: #111;
+    border: 5px solid #111;
+}
+

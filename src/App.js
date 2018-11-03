@@ -13,7 +13,6 @@ class App extends Component {
       <div className="App">
 
         <header>
-
           <nav className="navbar">
             <div className="media">
               <img src={logo} alt="bloc jams logo" height="100" />
@@ -28,6 +27,9 @@ class App extends Component {
           <Route path="/library" component={Library} />
           <Route path="/album/:slug" component={Album} />
         </main>
+        <footer>
+          Carla Bates 2018
+        </footer>
       </div>
     );
   }

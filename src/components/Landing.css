@@ -1,5 +1,6 @@
 .landing {
     font-family: 'Roboto', sans-serif, monospace, serif;
+    color: #111;
 }
 
 .hero-title {
@@ -7,17 +8,19 @@
     font-size: 100px;
     margin: 100px;
     text-shadow: 3px 2px white;
+   
 }
 
 .point {
-display: inline-block;
-margin: 20px;
+    display: inline-block;
+    margin: 20px;
+   
 }
 
 div.icon.ion-md, ::after, ::before {
     font-size: 150px;
-  }
+}
 
   .point-description{
       font-size: 20px;
-  }
+}
